@@ -1,0 +1,39 @@
+[2025-03-26T07:01:30.660+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-26T07:01:30.665+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_user_session_data_from_s3.copy_session_timestamp manual__2025-03-26T07:01:23.691946+00:00 [queued]>
+[2025-03-26T07:01:30.667+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_user_session_data_from_s3.copy_session_timestamp manual__2025-03-26T07:01:23.691946+00:00 [queued]>
+[2025-03-26T07:01:30.667+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-03-26T07:01:30.671+0000] {taskinstance.py:2888} INFO - Executing <Task(SnowflakeOperator): copy_session_timestamp> on 2025-03-26 07:01:23.691946+00:00
+[2025-03-26T07:01:30.674+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=659) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-26T07:01:30.674+0000] {standard_task_runner.py:72} INFO - Started process 662 to run task
+[2025-03-26T07:01:30.674+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'import_user_session_data_from_s3', 'copy_session_timestamp', 'manual__2025-03-26T07:01:23.691946+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/import_user_session_data.py', '--cfg-path', '/tmp/tmplvp3rv_w']
+[2025-03-26T07:01:30.675+0000] {standard_task_runner.py:105} INFO - Job 15: Subtask copy_session_timestamp
+[2025-03-26T07:01:30.689+0000] {task_command.py:467} INFO - Running <TaskInstance: import_user_session_data_from_s3.copy_session_timestamp manual__2025-03-26T07:01:23.691946+00:00 [running]> on host 2bee9cd353de
+[2025-03-26T07:01:30.710+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='import_user_session_data_from_s3' AIRFLOW_CTX_TASK_ID='copy_session_timestamp' AIRFLOW_CTX_EXECUTION_DATE='2025-03-26T07:01:23.691946+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-26T07:01:23.691946+00:00'
+[2025-03-26T07:01:30.710+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-26T07:01:30.716+0000] {sql.py:266} INFO - Executing: 
+    COPY INTO dev.raw.session_timestamp
+    FROM @dev.raw.blob_stage/session_timestamp.csv
+    FILE_FORMAT = (TYPE = 'CSV', SKIP_HEADER = 1, FIELD_OPTIONALLY_ENCLOSED_BY = '"')
+    ON_ERROR = 'CONTINUE';
+    
+[2025-03-26T07:01:30.719+0000] {base.py:84} INFO - Retrieving connection 'snowflake_conn'
+[2025-03-26T07:01:30.722+0000] {base.py:84} INFO - Retrieving connection 'snowflake_conn'
+[2025-03-26T07:01:30.722+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.1, Python Version: 3.12.5, Platform: Linux-6.12.5-linuxkit-aarch64-with-glibc2.36
+[2025-03-26T07:01:30.722+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2025-03-26T07:01:30.722+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-03-26T07:01:31.212+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2025-03-26T07:01:31.212+0000] {sql.py:509} INFO - Running statement: COPY INTO dev.raw.session_timestamp
+    FROM @dev.raw.blob_stage/session_timestamp.csv
+    FILE_FORMAT = (TYPE = 'CSV', SKIP_HEADER = 1, FIELD_OPTIONALLY_ENCLOSED_BY = '"')
+    ON_ERROR = 'CONTINUE';, parameters: None
+[2025-03-26T07:01:32.715+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2025-03-26T07:01:32.716+0000] {sql.py:518} INFO - Rows affected: 1
+[2025-03-26T07:01:32.717+0000] {snowflake.py:422} INFO - Rows affected: 1
+[2025-03-26T07:01:32.718+0000] {snowflake.py:423} INFO - Snowflake query id: 01bb42c5-0004-ccc2-0005-a9f700032126
+[2025-03-26T07:01:32.719+0000] {connection.py:788} INFO - closed
+[2025-03-26T07:01:32.765+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2025-03-26T07:01:32.870+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-26T07:01:32.870+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=import_user_session_data_from_s3, task_id=copy_session_timestamp, run_id=manual__2025-03-26T07:01:23.691946+00:00, execution_date=20250326T070123, start_date=20250326T070130, end_date=20250326T070132
+[2025-03-26T07:01:32.904+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-26T07:01:32.915+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-26T07:01:32.916+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
