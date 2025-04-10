@@ -1,0 +1,21 @@
+version: 2
+sources:
+  - name: RAW
+    database: DEV
+    schema: RAW
+    description: "Schema which stores raw tables (ETL)"
+    tables:
+    - name: user_session_channel
+      identifier: user_session_channel
+      description: "Session data including userId, sessionId, and channel"
+    - name: session_timestamp
+      identifier: session_timestamp
+      description: "Session data including timestamp"
+  - name: ANALYTICS
+    database: DEV
+    schema: ANALYTICS
+    description: "Schema with stores analytics tables (ELT)"
+    tables:
+     - name: session_summary
+       identifier: session_summary
+       description: "Complete session info"
