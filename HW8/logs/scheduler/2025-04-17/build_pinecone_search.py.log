@@ -1,0 +1,192 @@
+[2025-04-17T06:07:31.853+0000] {processor.py:186} INFO - Started process (PID=449) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:07:31.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:07:31.855+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:31.855+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:07:33.660+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:07:33.662+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:07:33.703+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.703+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG:Medium_to_Pinecone
+[2025-04-17T06:07:33.706+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.706+0000] {override.py:1900} INFO - Created Permission View: can read on DAG:Medium_to_Pinecone
+[2025-04-17T06:07:33.707+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.707+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG:Medium_to_Pinecone
+[2025-04-17T06:07:33.708+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.708+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:Medium_to_Pinecone
+[2025-04-17T06:07:33.710+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.710+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Run:Medium_to_Pinecone
+[2025-04-17T06:07:33.711+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.711+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Run:Medium_to_Pinecone
+[2025-04-17T06:07:33.712+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.712+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:Medium_to_Pinecone
+[2025-04-17T06:07:33.712+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.712+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:07:33.716+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.716+0000] {dag.py:3252} INFO - Creating ORM DAG for Medium_to_Pinecone
+[2025-04-17T06:07:33.719+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:07:33.719+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-10 00:00:00+00:00, run_after=2025-04-17 00:00:00+00:00
+[2025-04-17T06:07:33.725+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.875 seconds
+[2025-04-17T06:08:04.086+0000] {processor.py:186} INFO - Started process (PID=467) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:08:04.087+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:08:04.089+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:08:04.089+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:08:05.735+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:08:05.736+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:08:05.745+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:08:05.744+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:08:05.751+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:08:05.751+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-10 00:00:00+00:00, run_after=2025-04-17 00:00:00+00:00
+[2025-04-17T06:08:05.756+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.674 seconds
+[2025-04-17T06:08:36.106+0000] {processor.py:186} INFO - Started process (PID=491) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:08:36.107+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:08:36.109+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:08:36.109+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:08:37.700+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:08:37.701+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:08:37.709+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:08:37.708+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:08:37.715+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:08:37.715+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-10 00:00:00+00:00, run_after=2025-04-17 00:00:00+00:00
+[2025-04-17T06:08:37.720+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.619 seconds
+[2025-04-17T06:09:08.071+0000] {processor.py:186} INFO - Started process (PID=509) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:09:08.072+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:09:08.073+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:09:08.073+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:09:09.653+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:09:09.654+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:09:09.661+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:09:09.661+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:09:09.668+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:09:09.668+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-10 00:00:00+00:00, run_after=2025-04-17 00:00:00+00:00
+[2025-04-17T06:09:09.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.607 seconds
+[2025-04-17T06:09:40.081+0000] {processor.py:186} INFO - Started process (PID=568) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:09:40.082+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:09:40.083+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:09:40.083+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:09:41.786+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:09:41.787+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:09:41.796+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:09:41.796+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:09:41.804+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:09:41.803+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:09:41.809+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.731 seconds
+[2025-04-17T06:10:12.061+0000] {processor.py:186} INFO - Started process (PID=628) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:10:12.062+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:10:12.065+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:10:12.064+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:10:13.676+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:10:13.677+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:10:13.685+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:10:13.685+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:10:13.692+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:10:13.692+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:10:13.697+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.641 seconds
+[2025-04-17T06:10:44.036+0000] {processor.py:186} INFO - Started process (PID=646) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:10:44.037+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:10:44.039+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:10:44.038+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:10:45.600+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:10:45.601+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:10:45.610+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:10:45.610+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:10:45.617+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:10:45.617+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:10:45.631+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.601 seconds
+[2025-04-17T06:11:15.920+0000] {processor.py:186} INFO - Started process (PID=664) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:11:15.921+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:11:15.923+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:11:15.923+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:11:17.471+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:11:17.472+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:11:17.479+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:11:17.479+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:11:17.486+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:11:17.486+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:11:17.491+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.576 seconds
+[2025-04-17T06:11:47.839+0000] {processor.py:186} INFO - Started process (PID=682) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:11:47.840+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:11:47.842+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:11:47.842+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:11:49.396+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:11:49.397+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:11:49.405+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:11:49.405+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:11:49.413+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:11:49.413+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:11:49.420+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.586 seconds
+[2025-04-17T06:12:19.503+0000] {processor.py:186} INFO - Started process (PID=699) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:12:19.503+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:12:19.505+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:12:19.505+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:12:21.056+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:12:21.058+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:12:21.066+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:12:21.065+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:12:21.072+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:12:21.072+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:12:21.077+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.578 seconds
+[2025-04-17T06:12:51.427+0000] {processor.py:186} INFO - Started process (PID=717) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:12:51.427+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:12:51.429+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:12:51.429+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:12:52.975+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:12:52.977+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:12:52.986+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:12:52.986+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:12:52.995+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:12:52.995+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:12:53.001+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.579 seconds
+[2025-04-17T06:13:23.350+0000] {processor.py:186} INFO - Started process (PID=735) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:13:23.351+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:13:23.353+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:13:23.352+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:13:24.898+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:13:24.899+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:13:24.906+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:13:24.906+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:13:24.913+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:13:24.913+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:13:24.918+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.573 seconds
+[2025-04-17T06:13:55.030+0000] {processor.py:186} INFO - Started process (PID=753) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:13:55.031+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:13:55.033+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:13:55.033+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:13:56.603+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:13:56.604+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:13:56.612+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:13:56.611+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:13:56.618+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:13:56.618+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:13:56.623+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.598 seconds
+[2025-04-17T06:14:26.953+0000] {processor.py:186} INFO - Started process (PID=771) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:14:26.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:14:26.956+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:14:26.956+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:14:28.472+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:14:28.473+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:14:28.481+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:14:28.481+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:14:28.487+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:14:28.487+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:14:28.492+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.544 seconds
+[2025-04-17T06:14:58.832+0000] {processor.py:186} INFO - Started process (PID=789) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:14:58.833+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:14:58.834+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:14:58.834+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:15:00.360+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:15:00.361+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:15:00.369+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:15:00.369+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:15:00.375+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:15:00.375+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:15:00.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.552 seconds
+[2025-04-17T06:15:30.718+0000] {processor.py:186} INFO - Started process (PID=807) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:15:30.719+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:15:30.720+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:15:30.720+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:15:32.231+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:15:32.232+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:15:32.239+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:15:32.239+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:15:32.245+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:15:32.245+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:15:32.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.538 seconds
+[2025-04-17T06:16:02.409+0000] {processor.py:186} INFO - Started process (PID=825) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:16:02.410+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:16:02.412+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:16:02.411+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:16:03.947+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:16:03.948+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:16:03.955+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:16:03.955+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:16:03.962+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:16:03.962+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:16:03.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.563 seconds
+[2025-04-17T06:16:34.322+0000] {processor.py:186} INFO - Started process (PID=843) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:16:34.322+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:16:34.324+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:16:34.324+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:16:35.904+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:16:35.905+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:16:35.913+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:16:35.913+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:16:35.919+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:16:35.919+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:16:35.925+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.608 seconds
+[2025-04-17T06:17:06.226+0000] {processor.py:186} INFO - Started process (PID=867) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:17:06.227+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:17:06.229+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:17:06.229+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:17:07.793+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:17:07.794+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:17:07.802+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:17:07.802+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:17:07.809+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:17:07.809+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:17:07.814+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.593 seconds
+[2025-04-17T06:17:38.118+0000] {processor.py:186} INFO - Started process (PID=885) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:17:38.119+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:17:38.120+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:17:38.120+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:17:39.653+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:17:39.654+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:17:39.661+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:17:39.661+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:17:39.668+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:17:39.668+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:17:39.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.561 seconds
+[2025-04-17T06:18:09.854+0000] {processor.py:186} INFO - Started process (PID=903) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:18:09.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:18:09.857+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:18:09.856+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:18:11.367+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:18:11.368+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:18:11.376+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:18:11.376+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:18:11.382+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:18:11.382+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:18:11.387+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.539 seconds
+[2025-04-17T06:18:41.663+0000] {processor.py:186} INFO - Started process (PID=921) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:18:41.664+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:18:41.665+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:18:41.665+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:18:43.252+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:18:43.253+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:18:43.261+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:18:43.261+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:18:43.267+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:18:43.267+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:18:43.273+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.614 seconds
+[2025-04-17T06:19:13.644+0000] {processor.py:186} INFO - Started process (PID=939) to work on /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:19:13.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/build_pinecone_search.py for tasks to queue
+[2025-04-17T06:19:13.647+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:19:13.647+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:19:15.274+0000] {logging_mixin.py:190} INFO - {{ task_instance.xcom_pull(task_ids='preprocess_data', dag_id='Medium_to_Pinecone', key='return_value') }}
+[2025-04-17T06:19:15.276+0000] {processor.py:925} INFO - DAG(s) 'Medium_to_Pinecone' retrieved from /opt/airflow/dags/build_pinecone_search.py
+[2025-04-17T06:19:15.283+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:19:15.283+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T06:19:15.290+0000] {logging_mixin.py:190} INFO - [2025-04-17T06:19:15.290+0000] {dag.py:4156} INFO - Setting next_dagrun for Medium_to_Pinecone to 2025-04-17 00:00:00+00:00, run_after=2025-04-24 00:00:00+00:00
+[2025-04-17T06:19:15.295+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/build_pinecone_search.py took 1.657 seconds
