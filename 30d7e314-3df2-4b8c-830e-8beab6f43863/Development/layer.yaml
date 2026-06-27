@@ -1,0 +1,195 @@
+id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+name: Development
+type: 1
+canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+blocks:
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: "Visualizes sales seasonality patterns across 2013\u20132017 via 4-chart\
+    \ dashboard: daily trend line, average sales by weekday (bar chart), by month\
+    \ (bar chart), and by day-of-month highlighting payday effects. Identifies peak\
+    \ weekday."
+  height: 1000
+  id: 04a8168b-e604-4c39-b6af-dd16c4e43b56
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: eda.seasonality
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 1000
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: 'Builds an OLS forecast model for daily sales with calendar features
+    (holidays, paydays, trend, Fourier seasonality) and lagged features. Validates
+    on final 60 days (8.76% MAPE), identifies business drivers (earthquakes +19.5%,
+    promotions +0.21), and generates 16-day forward forecast (proj_sum: 13.7M). Includes
+    recursive lag updates to avoid data leakage.'
+  height: 1000
+  id: 0669568d-9441-45d5-9692-e9f02d77c55e
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: model
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 500
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: Assembles a markdown executive summary of Ecuador grocery sales, pulling
+    model performance metrics, driver effects, seasonality patterns, and a 16-day
+    forecast to provide business stakeholders with actionable insights on staffing,
+    promotions, and oil-price monitoring.
+  height: 1000
+  id: 16e5b865-b1ab-469a-9273-c8a2879f4934
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: report.summary
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 2500
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings:
+    compute_environment_type: 1
+  description: ''
+  height: 1000
+  id: 3cc1f2ad-51b6-42b1-86e9-b781a5ec3e35
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: Example Dataset
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 0
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: Aggregates daily national sales, promotions, and transactions across
+    all stores. Merges oil prices (forward-filling gaps) and identifies national holidays
+    and paydays. Creates a clean time-series dataset with calendar features for sales
+    forecasting.
+  height: 1000
+  id: 55af75eb-ae32-4bae-8372-d5467ed74126
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: aggregate_national_daily
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 500
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: Analyzes national sales trends vs. oil prices using 30-day rolling
+    means and correlation analysis; visualizes dual-axis comparison; segments sales
+    by city and store type to identify top performers and revenue distribution patterns.
+  height: 1000
+  id: 67fe11a8-85b3-4fb6-97ea-71dc4677bc89
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: eda.context
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 2500
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: 'Validates forecasting model quality by running 5 diagnostic checks:
+    OLS vs baseline accuracy, holiday/earthquake coefficient directions, weekend>weekday
+    pattern, and forecast range plausibility. Reports pass/fail status with supporting
+    metrics.'
+  height: 1000
+  id: 6a0de2df-5b2b-4ad9-9dfd-8afdb25d12fd
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: model.sanity_check
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 500
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: "Analyzes promotion impact across product families by comparing average\
+    \ sales when on vs. off promotion. Ranks the top 12 families by uplift multiplier\
+    \ (on \xF7 off ratio) and visualizes results in a horizontal bar chart with annotations."
+  height: 1000
+  id: fb92e715-5248-4edc-8ba0-c9ce5ba2f4e1
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: eda.promotion_uplift_analysis
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 2000
+edges:
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: 05e3cdb0-9b29-453e-9f60-d453bfba73db
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: fb92e715-5248-4edc-8ba0-c9ce5ba2f4e1
+  target: 67fe11a8-85b3-4fb6-97ea-71dc4677bc89
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: 36129e0b-8baf-40f7-bedc-b0c2d337f5d3
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 6a0de2df-5b2b-4ad9-9dfd-8afdb25d12fd
+  target: 16e5b865-b1ab-469a-9273-c8a2879f4934
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: 41786b14-7627-4f80-b1a2-392a17438060
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 04a8168b-e604-4c39-b6af-dd16c4e43b56
+  target: fb92e715-5248-4edc-8ba0-c9ce5ba2f4e1
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: 5c1e7c4f-01e8-4c9f-a747-5f0a238ff07b
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 67fe11a8-85b3-4fb6-97ea-71dc4677bc89
+  target: 16e5b865-b1ab-469a-9273-c8a2879f4934
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: 691a80ae-2c70-4f55-b276-29bfcfe771b4
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 55af75eb-ae32-4bae-8372-d5467ed74126
+  target: 04a8168b-e604-4c39-b6af-dd16c4e43b56
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: 74b8f864-90b5-4007-802f-70f073ec1ab3
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 3cc1f2ad-51b6-42b1-86e9-b781a5ec3e35
+  target: 55af75eb-ae32-4bae-8372-d5467ed74126
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: 8abb9d15-16d0-4a31-9237-9e61fd529a4b
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 0669568d-9441-45d5-9692-e9f02d77c55e
+  target: 6a0de2df-5b2b-4ad9-9dfd-8afdb25d12fd
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: b743e3c5-38a2-401e-adfc-ca3f8c146c7b
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 55af75eb-ae32-4bae-8372-d5467ed74126
+  target: 0669568d-9441-45d5-9692-e9f02d77c55e
