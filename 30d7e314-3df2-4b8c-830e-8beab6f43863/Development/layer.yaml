@@ -16,7 +16,7 @@ blocks:
   name: eda.seasonality
   parent_id: null
   properties: {}
-  status: 1
+  status: 3
   type: 1
   variables: null
   width: 1600
@@ -36,7 +36,7 @@ blocks:
   name: model
   parent_id: null
   properties: {}
-  status: 1
+  status: 3
   type: 1
   variables: null
   width: 1600
@@ -55,7 +55,7 @@ blocks:
   name: report.summary
   parent_id: null
   properties: {}
-  status: 1
+  status: 3
   type: 1
   variables: null
   width: 1600
@@ -72,7 +72,7 @@ blocks:
   name: Example Dataset
   parent_id: null
   properties: {}
-  status: 1
+  status: 3
   type: 1
   variables: null
   width: 1600
@@ -91,7 +91,7 @@ blocks:
   name: aggregate_national_daily
   parent_id: null
   properties: {}
-  status: 1
+  status: 3
   type: 1
   variables: null
   width: 1600
@@ -109,7 +109,7 @@ blocks:
   name: eda.context
   parent_id: null
   properties: {}
-  status: 1
+  status: 3
   type: 1
   variables: null
   width: 1600
@@ -128,7 +128,7 @@ blocks:
   name: model.sanity_check
   parent_id: null
   properties: {}
-  status: 1
+  status: 3
   type: 1
   variables: null
   width: 1600
@@ -146,12 +146,71 @@ blocks:
   name: eda.promotion_uplift_analysis
   parent_id: null
   properties: {}
-  status: 1
+  status: 3
   type: 1
   variables: null
   width: 1600
   x: 0
   y: 2000
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: 'Ranks product families by demand forecastability using seasonal-naive
+    lag-7 MAPE on the last 60 days of history. Creates a color-coded bar chart (green=stable,
+    red=volatile) with tier classifications to guide inventory strategy: low-MAPE
+    families support lean stocking; high-MAPE families need larger safety buffers.'
+  height: 1000
+  id: aca69bb3-cdb2-4a96-bd83-2c860ed12147
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: analysis.forecastability_ranking
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 1900
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: Analyzes promotion ROI across product families by comparing sales on
+    vs. off promotion. Classifies families into four quadrants (Promote, Niche, Volume
+    Driver, Skip) based on uplift % and absolute incremental volume. Outputs a detailed
+    quadrant summary and creates a scatter plot visualization with highlighted top
+    opportunities.
+  height: 1000
+  id: 065fe0b1-42a9-424d-a876-310c2f9e2a41
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: analysis.promotion_roi_nuance
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 3400
+- auto_size: false
+  canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  compute_settings: null
+  description: "Backtests an OLS sales forecast model using rolling 30-day evaluation\
+    \ windows across 9 months. Compares model accuracy (MAPE) against seasonal na\xEF\
+    ve baseline, flags New Year holiday spike period, and visualizes per-window performance\
+    \ with win/loss shading. Result: OLS wins 7/9 windows (78%), beating na\xEFve\
+    \ by ~1.5pp on average."
+  height: 1000
+  id: fee80b6c-b469-48bc-9bd1-e8438f283528
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  name: model.rolling_origin_backtest
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 1900
 edges:
 - canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
   id: 05e3cdb0-9b29-453e-9f60-d453bfba73db
@@ -193,3 +252,18 @@ edges:
   layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
   source: 55af75eb-ae32-4bae-8372-d5467ed74126
   target: 0669568d-9441-45d5-9692-e9f02d77c55e
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: c5440b1b-1049-4358-ab9e-b2b2f3da19f0
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: fb92e715-5248-4edc-8ba0-c9ce5ba2f4e1
+  target: 065fe0b1-42a9-424d-a876-310c2f9e2a41
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: 063d77e8-8653-40e9-95bc-77878cd5ff12
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 55af75eb-ae32-4bae-8372-d5467ed74126
+  target: aca69bb3-cdb2-4a96-bd83-2c860ed12147
+- canvas_id: 30d7e314-3df2-4b8c-830e-8beab6f43863
+  id: d1d942b9-ec3c-4f25-8339-541634af25e9
+  layer_id: 7983a839-3ee2-49d4-8238-d1e5a53bf947
+  source: 0669568d-9441-45d5-9692-e9f02d77c55e
+  target: fee80b6c-b469-48bc-9bd1-e8438f283528
